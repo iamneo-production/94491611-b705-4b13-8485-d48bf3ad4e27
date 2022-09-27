@@ -10,11 +10,13 @@ import Login from './components/Login';
 import PopularPlan from './components/PopularPlan';
 import Profile from './components/Profile';
 import Registration from './components/Registration';
+import Navbar from './components/Screen/Navbar'
 
 function App() {
 
   return (
       <Router>
+        
       <Routes>
       <Route path="/" element={<Home />} /> 
       <Route path="/PopularPlan" element={<PopularPlan />} />
