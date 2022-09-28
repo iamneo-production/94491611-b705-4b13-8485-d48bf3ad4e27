@@ -11,8 +11,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Popular Plans', 'Add Ons', 'History'];
+const settings = ['Logout'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -37,11 +37,11 @@ const ResponsiveAppBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
+        <Link to="/"><Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/Home"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -53,7 +53,7 @@ const ResponsiveAppBar = () => {
             }}
           >
             AIRNET
-          </Typography>
+          </Typography></Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <Menu
@@ -74,11 +74,23 @@ const ResponsiveAppBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <Link to="/"><Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/Home"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            Popular Plans
+          </Typography></Link>
             </Menu>
           </Box>
           <Typography

@@ -13,8 +13,8 @@ function Home() {
             <div>
                 <Navbar />
             </div>
-            <div style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"80px 0px"}}>
-                <Card sx={{ maxWidth: 345 }}>
+            <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",margin:"80px 0px"}}>
+                <Card sx={{ maxWidth: 600 ,margin:"10px"}}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
                             Lizard
@@ -29,7 +29,7 @@ function Home() {
                         <Button size="small">Learn More</Button>
                     </CardActions>
                 </Card>
-                <Card sx={{ maxWidth: 345 ,margin:"10px"}}>
+                <Card sx={{ maxWidth: 600 ,margin:"10px"}}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
                             Lizard
@@ -44,7 +44,7 @@ function Home() {
                         <Button size="small">Learn More</Button>
                     </CardActions>
                 </Card>
-                <Card sx={{ maxWidth: 345,margin:"10px" }}>
+                <Card sx={{ maxWidth: 600,margin:"10px" }}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
                             Lizard
@@ -55,7 +55,7 @@ function Home() {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small">Share</Button>
+                        <Button size="small"></Button>
                         <Button size="small">Learn More</Button>
                     </CardActions>
                 </Card>

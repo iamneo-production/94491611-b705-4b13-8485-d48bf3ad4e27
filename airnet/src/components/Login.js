@@ -14,12 +14,6 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './CSS/Login.css'
 function Copyright(props) {
     return (
-<<<<<<< HEAD
-        <div>
-         
-        </div>
-    )
-=======
       <Typography variant="body2" color="text.secondary" align="center" {...props}>
         {'Copyright © '}
         <Link color="inherit" href="https://mui.com/">
@@ -41,8 +35,6 @@ function Login() {
         });
       };
   return (
->>>>>>> 513fc430e2de32bd8d7503e952925800500a9d4c
-
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -111,9 +103,4 @@ function Login() {
     </ThemeProvider>
   );
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 513fc430e2de32bd8d7503e952925800500a9d4c
 export default Login;
