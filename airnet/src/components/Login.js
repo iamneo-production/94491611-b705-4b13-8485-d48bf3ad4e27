@@ -19,7 +19,7 @@ function Copyright(props) {
          
         </div>
     )
-=======
+
       <Typography variant="body2" color="text.secondary" align="center" {...props}>
         {'Copyright © '}
         <Link color="inherit" href="https://mui.com/">
